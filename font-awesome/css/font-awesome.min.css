@@ -484,9 +484,9 @@
   content: "\f06b";
 }
 .fa-leaf:before {
- content:url(/public/logo-blanc.png);
+ content:url(/themes/chbp/img/logo-blanc.png);
 vertical-align:middle;
-height: 100%;}
+}
 .fa-fire:before {
   content: "\f06d";
 }

@@ -91,7 +91,7 @@ pre {
 	text-shadow: 1px 1px 2px #000000;
 }
 .navbar-custom.top-nav-collapse {
-      background: #bbb;
+      background: #c7c9d6;
 }
 .navbar-custom .navbar-brand {
     font-weight: 700;
@@ -146,6 +146,10 @@ pre {
     color: #fff;
 }
 
+.deroule li ul {display: none; position:absolute;list-style-type:none;padding-left:0px;}
+.deroule li ul li {margin-top: 15px; border-bottom: 1px solid black;}
+.deroule li:hover{ background: #c7c9d6;}
+.deroule li:hover ul {display: block; position:absolute; background: #c7c9d6;}
 @media(min-width:768px) {
     .navbar-custom {
         padding: 1.2em 0;

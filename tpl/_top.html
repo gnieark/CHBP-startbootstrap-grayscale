@@ -16,7 +16,24 @@
 		</div>
 		
 		<div class="collapse navbar-collapse navbar-right navbar-main-collapse">
-		{{tpl:MySimpleMenu class="nav navbar-nav" description="title"}}
+		
+		<!-- On remplace par la liste des categories -->
+		<tpl:Categories url="header">
+		<ul class="nav navbar-nav deroule">
+		<tpl:CategoryFirstChildren>
+
+		    <li class="li1 li-last"><a href="#">{{tpl:CategoryTitle encode_html="1"}}</a>
+		      <ul>
+		    	<tpl:Entries>
+			  <li><a href="{{tpl:EntryURL}}" title="{{tpl:lang Read}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryTitle}}</a></li>
+			</tpl:Entries>
+			</ul>
+		    </li>
+
+		 </tpl:CategoryFirstChildren>
+
+		 </ul>
+		</tpl:Categories>
 		</div>
 		
 	</div>
