@@ -148,8 +148,27 @@ pre {
 
 .deroule li ul {display: none; position:absolute;list-style-type:none;padding-left:0px;}
 .deroule li ul li {margin-top: 15px; border-bottom: 1px solid black;}
-.deroule li:hover{ background: #c7c9d6;}
-.deroule li:hover ul {display: block; position:absolute; background: #c7c9d6;}
+.deroule li:hover{ 
+  	margin-bottom: 1em;
+	padding: 0;
+
+
+
+	height: auto;
+	border: 1px solid #ddd;
+	background : #eee
+  
+  
+}
+.deroule li:hover ul {
+  display: block; position:absolute; 
+  	margin-bottom: 1em;
+	padding: 0;
+	width:100%;
+	height: auto;
+	border: 1px solid #ddd;
+	background : #eee
+}
 @media(min-width:768px) {
     .navbar-custom {
         padding: 1.2em 0;
@@ -201,7 +220,7 @@ pre {
     display: table;
     width: 100%;
     height: 450px;
-    padding: 100px 0;
+    padding: 100px 0 0 0;
     text-align: center;
     color: #fff;
 	text-shadow: 2px 2px 4px #000000;
@@ -249,12 +268,11 @@ pre {
 .intro .intro-body .brand-heading {
     font-size: 3em;
 }
-
+/*  */
 .intro .intro-body .intro-text {
-    font-size: 1.5em;
-	
+    font-size: 1em;
 }
-
+.intro-text {position:absolute;}
 .intro .btn-circle {
 		display: none
 	}
@@ -330,11 +348,16 @@ pre {
 	line-height: 1.17;
 	font-size: 2.8em
 }
-	
-.post-title a {
+.post-title-petit{
+ 	margin: .5em 0;
+	line-height: 1.17;
+	font-size: 1.5em; 
+	height: 80px;
+}
+.post-title a, .post-title-petit a {
 	text-decoration: none;
 }
-	
+.apercu{height: 80px;}	
 
 .post h3,
 .post h4,
@@ -349,7 +372,7 @@ pre {
 }
 
 .post-infos {
-	margin-bottom: 8em;
+	margin-bottom: 1em;
 	padding: 0;
 	font-size: 0.875em;
 	display: table;
@@ -765,7 +788,7 @@ img.smiley {
 ------------------------------------------------------------- */
 
 ul.banner-social-buttons {
-    margin: 5em 0 1em 0;
+    margin: 0 0 0 0;
 }
 
 @media(max-width:767px) {

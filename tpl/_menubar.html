@@ -2,18 +2,19 @@
 	<div class="blog-section">
 		<div class="container">
 						
-			<div class="col-lg-4 col-lg-offset-0" id="blognav">
-				{{tpl:Widgets type="nav"}}
-			</div>
-			
-			<div class="col-lg-4 col-lg-offset-0" id="blogextra">
-				{{tpl:Widgets type="extra"}}
-			</div>
-			
-			<div class="col-lg-4 col-lg-offset-0" id="blogcustom">
-				{{tpl:Widgets type="custom"}}
-			</div>
-			
+						
+		<tpl:Categories url="Bottom">
+		<tpl:CategoryFirstChildren>
+		<div class="col-lg-3 col-lg-offset-0" id="blognav">
+		  <h2>{{tpl:CategoryTitle encode_html="1"}}</h2>
+		    <ul>
+		    <tpl:Entries>
+			<li><a href="{{tpl:EntryURL}}" title="{{tpl:lang Read}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryTitle}}</a></li>
+		    </tpl:Entries>
+		    </ul>
+		</div>
+		 </tpl:CategoryFirstChildren>
+		</tpl:Categories>
 		</div>
 	</div>
 </aside>
