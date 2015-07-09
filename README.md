@@ -10,7 +10,7 @@ Ce thème n'est pas respectueux des conventions habituelles de Dotclear:
 Pour commencer, vous devez créer trois catégories:
 * header (url: header)
 * Bottom (url: Bottom)
-* Breves (url: Brèves)
+* Breves (url: breves)
 
 #### Catégorie header
 Elle ne doit pas contenir directement de billets, mas des sous catégories. Ces dernières s'afficheront sous forme de boutons de navigation déroulables en haut à droite.
