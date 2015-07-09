@@ -28,6 +28,7 @@ Elle contient des billets, pas de sous catégorie.
 #### Catégorie Accueil du site
 Elle ne contient qu'un billet, c'est la sorte d'éditorial qui apparaitra sur la home page
 
+## Organisation de la page
 ![str](/doc/screen.png)
 
 ### 1) Le titre du site
@@ -66,3 +67,4 @@ Start Bootstrap was created by and is maintained by **David Miller**, Managing P
 ## Copyright and License
 
 Code released under the [Apache 2.0](https://github.com/IronSummitMedia/startbootstrap-grayscale/blob/gh-pages/LICENSE) license.
+
