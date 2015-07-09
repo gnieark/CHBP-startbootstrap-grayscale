@@ -4,11 +4,11 @@ C'est un thème dotclear personnalisé en se basant sur le theme Grayscale http:
 ##Fonctionnement du thème
 ![str](/doc/screen.png)
 
-#1) Le titre du site
+###1) Le titre du site
 Paramétrable dans l'interface d'admin de Doctclear
-#2)Navigation
+###2)Navigation
 Ici sont effichées les sous catégorie de la catégorie nommée header
-#3)lorsqu'on déroule, ce sont les billets de chacune des sous catégorie
+###3)lorsqu'on déroule, ce sont les billets de chacune des sous catégorie
 ## Creator
 
 Rémi Passerieu, pour le centre hospitalier du Bois Petit.
