@@ -1,5 +1,6 @@
 ## About
-C'est un thème dotclear personnalisé en se basant sur le theme Grayscale http://themes.dotaddict.org/galerie-dc2/details/simplegrayscale
+C'est un thème dotclear Responsive, HTML5, utilisant bootstrap.
+Fortement personnalisé pour nos besoins, il a été créé en se basant sur le theme Grayscale http://themes.dotaddict.org/galerie-dc2/details/simplegrayscale
 
 ## Fonctionnement du thème
 ### Paramétrage des catégories
