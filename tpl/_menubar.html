@@ -1,19 +1,13 @@
 <aside id="menubar" class="content-section" role="complementary">
 	<div class="blog-section">
-		<div class="container">
-						
-			<div class="col-lg-4 col-lg-offset-0" id="blognav">
-				{{tpl:Widgets type="nav"}}
-			</div>
-			
-			<div class="col-lg-4 col-lg-offset-0" id="blogextra">
-				{{tpl:Widgets type="extra"}}
-			</div>
-			
-			<div class="col-lg-4 col-lg-offset-0" id="blogcustom">
-				{{tpl:Widgets type="custom"}}
-			</div>
-			
+		<div class="container">			
+		<tpl:Categories url="Bottom">
+		<tpl:Entries>
+		<div class="col-lg-3 col-lg-offset-0" id="blognav"> 
+			<p><a href="{{tpl:EntryURL}}" title="{{tpl:lang Read}} {{tpl:EntryTitle encode_html="1"}}">{{tpl:EntryTitle}}</a></p>		
+		</div>
+		 </tpl:Entries>
+		</tpl:Categories>
 		</div>
 	</div>
 </aside>

@@ -484,8 +484,7 @@
   content: "\f06b";
 }
 .fa-leaf:before {
-#  content: "\f06c";
-url(/public/logo-blanc.png)
+content: url(/themes/chbp/logo-blanc.png);
 }
 .fa-fire:before {
   content: "\f06d";

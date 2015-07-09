@@ -8,6 +8,7 @@ Presque fini, documentation à venir
 
 Rémi Passerieu, pour le centre hospitalier du Bois Petit.
 
+En réutilisant les travaux suivants:
 
 Simple Grayscale: Start Bootstrap and Philippe aka amalgame
 Start Bootstrap was created by and is maintained by **David Miller**, Managing Parter at [Iron Summit Media Strategies](http://www.ironsummitmedia.com/).

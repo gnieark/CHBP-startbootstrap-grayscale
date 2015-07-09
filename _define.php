@@ -12,12 +12,12 @@
 if (!defined('DC_RC_PATH')) { return; }
 
 $this->registerModule(
-	/* Name */				"Simple Grayscale",
-	/* Description*/		"Simple Grayscale Bootstrap theme for Dotclear",
-	/* Author */			"Start Bootstrap and Philippe aka amalgame",
-	/* Version */			'1.2',
-	/* Properties */		array(
-								'type' => 'theme',
-								'tplset' => 'mustek'
-							)
+	"CHBP",
+	"Personalisation du thème \"Simple Grayscale Bootstrap theme for Dotclear\" pour le Centre Hospitalier du Bois Petit",
+	"Rémi Passerieu - Centre Hospitalier du Bois Petit - 76300 Sotteville-les-Rouen",
+	'0.1',
+	array(
+		'type' => 'theme',
+		'tplset' => 'mustek'
+	)
 );
