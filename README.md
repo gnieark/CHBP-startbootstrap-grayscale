@@ -1,8 +1,8 @@
 ## About
 C'est un thème dotclear personnalisé en se basant sur le theme Grayscale http://themes.dotaddict.org/galerie-dc2/details/simplegrayscale
 
-##Avancement
-Presque fini, documentation à venir
+##Fonctionnement du thème
+![str](/doc/screen.png)
 
 ## Creator
 
