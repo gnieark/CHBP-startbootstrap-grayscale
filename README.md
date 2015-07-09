@@ -1,7 +1,30 @@
 ## About
 C'est un thème dotclear personnalisé en se basant sur le theme Grayscale http://themes.dotaddict.org/galerie-dc2/details/simplegrayscale
 
-##Fonctionnement du thème
+## Fonctionnement du thème
+### Paramétrage des catégories
+Ce thème n'est pas respectueux des conventions habituelles de Dotclear:
+* L'organisation en catégories du site est imposée par le thème, les Billets dans une catégorie non prévue n'apparaitront nulle part.
+* Certaines fonctionnalités de dotclear (dont les pages) sont rendues inutiles. 
+
+Pour commencer, vous devez créer trois catégories:
+* header (url: header)
+* Bottom (url: Bottom)
+* Breves (url: Brèves)
+
+#### Catégorie header
+Elle ne doit pas contenir directement de billets, mas des sous catégories. Ces dernières s'afficheront sous forme de boutons de navigation déroulables en haut à droite.
+* Evitez de mettre uun trop grand nombre de billets
+* L'URL des sous catégories ne doit pas contenir de caracteres accentués, car elles sont réutilisés pour définir les id d'élements HTML, et bootstrap/ jquery n'aiment pas les accents.
+
+#### Catégorie Bottom
+C'est le contraire, elle ne peut pas contenir de sous catégorie (à tester remarque...), directement quelques billets, qui seront mis en lien en petit en pied de page.
+
+#### Catégorie Brèves
+C'est le flux d'actualité. la catégorie qui justifie d'avoir utilisé un moteur de blog :p.
+Elle contient des billets, pas de sous catégorie
+
+
 ![str](/doc/screen.png)
 
 ###1) Le titre du site
