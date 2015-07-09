@@ -45,7 +45,7 @@ Il disparait lors d'un scroll vers le bas.
 Le billet le plus récent de la catégorie Accueil-du-site est présenté ici
 ### 7) Les n dernières brèves 
 En mode aperçu avec gestion de {{tpl:EntryFirstImage}}
-### 8) Botom
+### 8) Bottom
 Les billets de la catégorie Bottom
 
 ### 9 )Liens réseaux sociaux
