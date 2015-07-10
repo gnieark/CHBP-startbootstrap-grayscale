@@ -11,7 +11,7 @@ Ce thème n'est pas respectueux des conventions habituelles de Dotclear:
 Pour commencer, vous devez créer quatre catégories:
 * header (url: header)
 * Bottom (url: Bottom)
-* Breves (url: Brèves)
+* Breves (url: breves)
 * Accueil du site (url: Accueil-du-site)
 
 #### Catégorie header
