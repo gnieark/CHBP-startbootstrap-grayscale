@@ -1,6 +1,8 @@
 /* -- BEGIN LICENSE BLOCK ---------------------------------------
 # This file is part of Grayscale, a theme for Dotclear
 #
+# Copyright (c) 2015 - Rémi Passerieu - Centre Hospitalier du Bois Petit
+# Based on:
 # Copyright (c) 2015 - Start Bootstrap and Philippe aka amalgame
 # Based on Start Bootstrap - Grayscale Bootstrap Theme (http://startbootstrap.com)
 # Code licensed under the Apache License v2.0.
@@ -19,16 +21,12 @@ body {
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
     color: #666;
     background-color: #fff;
-	/* UNCOMMENT FOR FULL GREYSCALE EFFECT
-	-webkit-filter: grayscale(1);
-	filter: grayscale(1); */
 }
 
 html {
     width: 100%;
     height: 100%;
 }
-
 h1,
 h2,
 h3,
@@ -79,16 +77,53 @@ pre {
     word-wrap: break-word;       /* Internet Explorer 5.5+ */
 }
 
+
+/*SLIDE */
+.rslides {
+  position: relative;
+  list-style: none;
+  overflow: hidden;
+  width: 100%;
+  padding: 0;
+  margin: 0;
+  }
+
+.rslides li {
+  -webkit-backface-visibility: hidden;
+  position: absolute;
+  display: none;
+  width: 100%;
+  left: 0;
+  top: 0;
+  }
+
+.rslides li:first-child {
+  position: relative;
+  display: block;
+  float: left;
+  }
+
+.rslides img {
+  display: block;
+  height: auto;
+  float: left;
+  width: 100%;
+  border: 0;
+  }
 /* ------------------------------------------------------------
 	2. SIMPLE MENU
 ------------------------------------------------------------- */
+
+#topBar {
+	width: 100%;
+	padding: 0em 10% 0em;	
+}
 .navbar-custom {
     margin-bottom: 0;
     border-bottom: 1px solid rgba(255,255,255,.3);
     text-transform: uppercase;
     font-family: Montserrat,"Helvetica Neue",Helvetica,Arial,sans-serif;
-    background-color: #000;
-	text-shadow: 1px 1px 2px #000000;
+    background-color: rgba(198, 217, 118, 1);
 }
 .navbar-custom.top-nav-collapse {
       background: #c7c9d6;
@@ -102,7 +137,7 @@ pre {
 }
 
 .navbar-custom .navbar-brand .navbar-toggle{
-    padding: 4px 6px;
+    padding: 2px 3px;
     font-size: 1em;
     color: #fff;
 }
@@ -121,13 +156,6 @@ pre {
     -moz-transition: background .3s ease-in-out;
     transition: background .3s ease-in-out;
 }
-
-.navbar-custom .nav li a:hover {
-    outline: 0;
-    color: rgba(255,255,255,.8);
-    background-color: transparent;
-}
-
 .navbar-custom .nav li a:focus,
 .navbar-custom .nav li a:active {
     outline: 0;
@@ -143,167 +171,87 @@ pre {
 }
 
 .navbar-custom .nav li.active a:hover {
-    color: #fff;
+    color: #666;
 }
 .navbar-button{
-    padding:8px 0;
-    text-align:center;
+    text-align:left;
     display: inline-block;
-    margin:0 8px 0 0;
-    border-radius:7px;
     width:100%;
-    color:#fff;
+    color:#666;
     cursor: pointer;
+    text-align: center;
+    text-shadow: 1px 1px 2px #fff;
 }
 
-.navbar-button, .navbar-button:active {
-  
-    background: #555555;
-    background: linear-gradient( #555555, #2C2C2C);
-    background: -webkit-linear-gradient( #555555, #2C2C2C);
-    background: -moz-linear-gradient( #555555, #2C2C2C);
-    background: -ms-linear-gradient( #555555, #2C2C2C);
-    background: -o-linear-gradient( #555555, #2C2C2C);
-    background: linear-gradient( #555555, #2C2C2C);
+.deroule li{margin:2px;font-size: 1em;}
+.navbar-header .fa{float: left;}
+.navbar-nav li a{
+  padding-top: 5px;
+  padding-bottom: 5px;
+  line-height: 20px;
+  color: #3f3c39;
 }
-.navbar-button:hover {
-    background: #555555;
-    background: -webkit-linear-gradient( #777, #333);
-    background: -moz-linear-gradient( #777, #333);
-    background: -ms-linear-gradient( #777, #333);
-    background: -o-linear-gradient( #777, #333);
-    background: linear-gradient( #777, #333);
-}
-.navbar-button:active{box-shadow: 1px 1px 10px #000 inset, 0 1px 0 rgba( 85, 85, 85, 0.4);}
-.deroule li{margin:2px;}
+.navbar-header{display: none;}
+
 @media(min-width:768px) {
+  .navbar-right{ width:59%;}
+  .navbar-header{width:39%; display: inline-block;}
+  .navbar-nav li a{
+      padding-top: 10px;
+      padding-bottom: 10px;
+      line-height: 20px;
+      color: #3f3c39;
+    }
     .deroule{
       margin: 0;
       padding: 0;
       list-style: none;
       table-layout: fixed;
-      color: #fff;
+      color: #666;
+      z-index: 1000;
+      position:relative; 
+      background-color: rgba(198, 217, 118, 1);
+    
     }
     .deroule li{
       display:block;
       text-decoration: none;
-      margin:2px;
+      width: 30%;
+      font-size: 1em;
+      
+      
     }
-    .deroule li ul {display: none; position:absolute;list-style-type:none;padding-left:0px;  background-color: rgba(199, 201, 214, 0.5);width: 100%;}
-    .deroule li ul li {padding-top: 15px;width: 100%;}
-    .deroule li:hover{      background-color: rgba(199, 201, 214, 0.5); }
+    .deroule li ul {
+	display: none;
+	position:absolute;
+	list-style-type:none;
+	padding-left:0px;
+	background-color: rgba(198, 217, 118, 1);
+	width: 98%;
+	border-radius: 4px;
+      
+    }
+    .deroule li ul li {padding-top: 1em;width: 100%;max-width: 100%;}
+    .deroule li ul li:hover a{color: #fff; }
+    //.deroule li:hover{ }
     .deroule li:hover ul {
 	    display: block; position:absolute; 
     }
-
+    
     .navbar-custom {
-        padding: 1.2em 0;
+        padding: 0.1em 0;
         border-bottom: 0;
-        letter-spacing: 0.02em;
-        background: 0 0;
+        letter-spacing: 0.02em;	
+	//background-color: rgba(199, 201, 214, 0.9);
+	background-color: rgba(198, 217, 118, 1);
         -webkit-transition: background .5s ease-in-out,padding .5s ease-in-out;
         -moz-transition: background .5s ease-in-out,padding .5s ease-in-out;
         transition: background .5s ease-in-out,padding .5s ease-in-out;
     }
-
     .navbar-custom.top-nav-collapse {
         padding: 0;       
     }
 }
-
-#prelude {
-	position: absolute;
-	margin: 0;
-	padding: 0 0 0 4px;
-	top: 0;
-	left: 3px;
-	color: #fff;
-	list-style-type: none;
-}
-#prelude li {
-	display: inline;
-	text-transform: none !important;
-}
-#prelude a, #prelude a:hover, #prelude a:visited {
-	position:absolute;
-	left:0;
-	top:-500px;
-	width:1px;
-	height:1px;
-	overflow:hidden;
-	background-image: none !important;
-}
-#prelude a:active, #prelude a:focus {
-	position:static;
-	width:auto;
-	height:auto;
-}
-	
-/* ------------------------------------------------------------
-	3. HEADER
-------------------------------------------------------------- */
-.intro {
-    display: table;
-    width: 100%;
-    height: 450px;
-    padding: 100px 0 0 0;
-    text-align: center;
-    color: #fff;
-	text-shadow: 2px 2px 4px #000000;
-    background: url(../img/intro-bg.jpg) no-repeat bottom center scroll;
-    background-color: #000;
-    -webkit-background-size: cover;
-    -moz-background-size: cover;
-    background-size: cover;
-    -o-background-size: cover;
-	border-bottom: 1px solid #555
-}
-.intro h3 {
-	margin-bottom: 2em;
-}
-.intro ul, .intro li {
-	list-style-type: none;
-	font-size: 1em;
-	margin: 0;
-	padding: 0
-}
-.intro ul.subcategories {
-	list-style-type: none;
-	font-size: 1.5em;
-	margin: 0;
-	padding: 0
-}
-.intro ul.subcategories li {
-	display: inline;
-	margin: 0;
-	padding: 0
-}
-.intro a {
-	color: #fff
-}
-.intro .intro-body {
-    display: table-cell;
-    vertical-align: middle;
-}
-.intro .intro-footer {
-    margin-top: 2em
-}
-
-
-
-.intro .intro-body .brand-heading {
-    font-size: 3em;
-}
-/*  */
-.intro .intro-body .intro-text {
-    font-size: 1em;
-}
-.intro-text {position:absolute;}
-.intro .btn-circle {
-		display: none
-}
-.h1cat{margin-top:150px;}
-.linkaccueil{margin-top:50px;text-align:left;}
 
 
 /* ------------------------------------------------------------
@@ -312,9 +260,8 @@ pre {
 
 #content {
 	width: 100%;
-	padding: 2em 10% 6em;
-	
-	font-weight: normal
+	padding: 2em 10% 6em;	
+	font-weight: normal;
 }
 
 @media(max-width:767px) {
@@ -403,7 +350,7 @@ pre {
 	
 }
 
-.post-infos {
+.post-infos, .brevesTitle {
 	margin-bottom: 1em;
 	padding: 0;
 	font-size: 0.875em;
@@ -413,6 +360,7 @@ pre {
 	border: 1px solid #ddd;
 	background : #eee
 }
+h2.brevesTitle{font-size: 1.5em;}
 .cat-container{}
 .post-infos-cat{
 		
@@ -441,7 +389,7 @@ pre {
 
 @media(min-width:768px) {
     .post-content img, .post-excerpt img {
-		max-width: 100%;
+    max-width: 100%;
 }
 
 img.smiley {
@@ -849,26 +797,6 @@ footer p {
 /* ------------------------------------------------------------
 	9. ANIMATION
 ------------------------------------------------------------- */
-
-.parallax-background {
-	background-attachment: fixed;
-	background-position: top center;
-}
-.mobile-device .parallax-background {
-	background-attachment: scroll;
-	background-position: center center !important;
-}
-.mobile-device .parallax {
-	top: 0 !important;
-}
-@media ( max-width: 991px ) {
-	.parallax-background {
-		background-position: center center !important;
-	}
-	.parallax {
-		top: 0 !important;
-	}
-}
 
 @-webkit-keyframes pulse {    
     0 {

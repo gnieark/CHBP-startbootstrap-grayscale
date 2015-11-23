@@ -24,33 +24,13 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="dc-post">
 
 	{{tpl:include src="_top.html"}}
-	
-    <!-- Intro Header -->
-    <header class="intro" role="banner">	
-		<div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    
-			<div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><i class="fa fa-leaf"></i>  {{tpl:EntryTitle encode_html="1"}}</h1>
-                        <div class="intro-text"></div>
-			</div>
-                    <div class="intro-footer col-md-8 col-md-offset-2">
-		      <a href="#content" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
-                    </div>
-                </div>
-                <h3 class="col-lg-13 linkaccueil"><a href="/" title="Retour" class="feed"><i class="fa fa-arrow-left"></i>Accueil du site</a></h3>
-            </div>
-        </div>
-    </header>
-
     <!-- Content Section -->
     <section id="content" class="container content-section text-center" role="main">
         <div class="row">
             <div class="col-lg-8 col-lg-offset-2">
 				
 				<article id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}" lang="{{tpl:EntryLang}}" role="article">
-					
+					<h1 class="brand-heading"><i class="fa fa-leaf"></i>  {{tpl:EntryTitle encode_html="1"}}</h1>
 					<!-- # --BEHAVIOR-- publicEntryBeforeContent -->
 					{{tpl:SysBehavior behavior="publicEntryBeforeContent"}}
 

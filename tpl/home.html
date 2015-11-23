@@ -43,43 +43,34 @@
 <body id="page-top" data-spy="scroll" data-target=".navbar-fixed-top" class="dc-home<tpl:PaginationIf start="0">-paginated</tpl:PaginationIf>">
 
 	{{tpl:include src="_top.html"}}
-	
-    <!-- Intro Header -->
-    <header class="intro" role="banner">		
-	<div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    <div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading"><i class="fa fa-leaf"></i> {{tpl:BlogName encode_html="1"}}</h1>
-                        
-                    </div>
-                    
-					<div class="intro-footer col-md-8 col-md-offset-2">
-						<a href="#content" class="btn btn-circle page-scroll">
-                            <i class="fa fa-angle-double-down animated"></i>
-                        </a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-12 intro-text"><p>{{tpl:BlogDescription}}</p></div>
-        </div>
-		
-    </header>
-
     <!-- Content Section -->
-    <section id="content" class="container content-section text-center" role="main">
-        <div class="row">
+    <section id="content" class="container content-section text-center" role="main">    
+         <div class="row">    
 	  <div class="col-lg-8">
+	  
+	     <ul class="rslides">     
+		<li><img src="/public/GV/.P_20150724_113419_m.jpg" alt=""></li>
+		<li><img src="/public/DSC_5737_m.jpg" alt=""></li>
+		<li><img src="/public/IMAG0017.jpg" alt=""></li>
+	    </ul>
+	    <script>
+	    $(function() {
+	      $(".rslides").responsiveSlides();
+	    });
+	  </script>
+	  
 	  <!-- le billet editorial -->
 	  <tpl:Entries category="Accueil-du-site" lastn="1">
 	  <article id="p{{tpl:EntryID}}" class="post {{tpl:EntryIfOdd}} {{tpl:EntryIfFirst}}" lang="{{tpl:EntryLang}}" role="article">
-	    <h2 class="post-title">{{tpl:EntryTitle encode_html="1"}}</h2>
 	    <div class="post-content">{{tpl:EntryContent}}</div>  
 	  </article>
 	  </tpl:Entries>
 	  </div>
 	  <div class="col-lg-4">
 	  <!-- Les brèves -->
+	  
+	  <h2 class="brevesTitle">Actualités</h2>
+	  
 	    <tpl:Entries category="breves" lastn="4" ignore_pagination="1" role="article">
 		    <article id="p{{tpl:EntryID}}" class="col-lg-offset-0 post-infos">
 		    

@@ -40,31 +40,13 @@
 	{{tpl:include src="_top.html"}}
 	
     <!-- Intro Header -->
-    <header class="intro" role="banner">
-        
-		
-	<div class="intro-body">
-            <div class="container">
-                <div class="row">
-                    
-			<div class="col-md-8 col-md-offset-2">
-                        <h1 class="brand-heading h1cat"><i class="fa fa-leaf"></i> {{tpl:CategoryTitle encode_html="1"}}</h1>
-			<div class="intro-text">{{tpl:CategoryDescription}}</div>				
-                    </div>
-		    <div class="intro-footer col-md-8 col-md-offset-2">
-			<a href="#content" class="btn btn-circle page-scroll"><i class="fa fa-angle-double-down animated"></i></a>
-                    </div>		
-                </div>
-	       <h3 class="col-lg-13 linkaccueil"><a href="/" title="Retour" class="feed"><i class="fa fa-arrow-left"></i>Accueil du site</a></h3>	
-            </div>
-        </div>	
-    </header>
+ 
 
     <!-- Content Section -->
     <section id="content" class="container content-section text-center" role="main">
         <div class="row">
             <div class="col-lg-12 cat-container">
-			 
+			 <h1 class="brand-heading h1cat"><i class="fa fa-leaf"></i> {{tpl:CategoryTitle encode_html="1"}}</h1>
 				<tpl:Entries>
 		    <article id="p{{tpl:EntryID}}" class="col-lg-12 post-infos-cat">
 		    
