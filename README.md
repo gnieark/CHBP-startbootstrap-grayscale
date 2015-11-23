@@ -38,8 +38,8 @@ Paramétrable dans l'interface d'admin de Doctclear
 Ici sont effichées les sous catégorie de la catégorie nommée header
 ### 3)les billets de la catégorié brèves
 En mode aperçu avec gestion de {{tpl:EntryFirstImage}}
-### 4)Titre
-Slide automatique de photographies.
+### 4)Slide automatique de photographies.
+Modifiez tpl/home.html
 ```
 	     <ul class="rslides">     
 		<li><img src="/public/GV/.P_20150724_113419_m.jpg" alt=""></li>
