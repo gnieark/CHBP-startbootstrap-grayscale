@@ -38,16 +38,15 @@ Paramétrable dans l'interface d'admin de Doctclear
 Ici sont effichées les sous catégorie de la catégorie nommée header
 ### 3)les billets de la catégorié brèves
 En mode aperçu avec gestion de {{tpl:EntryFirstImage}}
-### 4)Titre
-Slide automatique de photographies.
-Dans le fichier tpl/home.html modifiez :
-<pre>
+### 4)Slide automatique de photographies.
+Modifiez tpl/home.html
+```
 	     <ul class="rslides">     
 		<li><img src="/public/GV/.P_20150724_113419_m.jpg" alt=""></li>
 		<li><img src="/public/DSC_5737_m.jpg" alt=""></li>
 		<li><img src="/public/IMAG0017.jpg" alt=""></li>
 	    </ul>
-</pre>
+```
 Pour ajouter vos photograhies
 
 ### 5)Message d'accueil - éditorial
